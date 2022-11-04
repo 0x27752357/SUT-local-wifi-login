@@ -2,8 +2,8 @@ import requests
 
 URL = "http://wifi.shahroodut/login"
 
-VALUES = {'username' : '40011573' ,
-          'password' : '670952664'}
+VALUES = {'username' : 'Your username' ,
+          'password' : 'Your password'}
 try :
         RESULT = requests.post(URL , VALUES)
         print("connected")
