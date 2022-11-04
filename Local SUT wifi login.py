@@ -2,7 +2,10 @@ import requests
 
 URL = "http://wifi.shahroodut/login"
 
-VALUES = {'username' : 'TYPE YOUR USERNAME HERE' ,
-          'password' : 'TYPE YOUR PASSWORD HERE'}
-RESULT = requests.post(URL , VALUES)
-print(RESULT.content)
+VALUES = {'username' : '40011573' ,
+          'password' : '670952664'}
+try :
+        RESULT = requests.post(URL , VALUES)
+        print("connected")
+except :
+        print("couldn't make connection with the server try again please !")
